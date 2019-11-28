@@ -20,6 +20,5 @@ def client_handler(client_socket):
 while True:
     client, address = server.accept()
     serv_client = threading.Thread(target=client_handler, args=(client,))
-    serv_client.append()
     serv_client.start()
 
